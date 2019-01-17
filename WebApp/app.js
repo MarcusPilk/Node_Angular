@@ -25,9 +25,15 @@ app.controller("WeatherController",['$scope','$http', '$sce',function ($scope, $
         };
     });
 
+
+
     $scope.closeB = function(){
         window.close();
         $http.get('http://localhost:3001/close').then((resp) => {console.log('done')});
+    }
+
+    $scope.openClock = function(){
+        $http.get('http://localhost:3001/clock').then((resp) => {console.log('done')});
     }
 
 

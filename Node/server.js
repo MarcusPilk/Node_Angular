@@ -1,6 +1,7 @@
 let express = require('express');
 let app = new express();
 let axios = require('axios');
+let shell = require('shelljs');
 let cors = require('cors');
 let path = require('path');
 const API_KEY = '511de09aed6883d2488a6a5ec9fde6a7';
@@ -21,6 +22,10 @@ app.get('/', async (req,res) => {
 app.get('/close', (req,res) => {
     console.log("trying to close browser");
     res.send();
+});
+app.get('/clock', (req,res) => {
+    shell.exec('./clock.sh');
+   res.send();
 });
 
 app.listen(3001);

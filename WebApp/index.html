@@ -4,16 +4,39 @@
     <title>
         Demo Angular
     </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<body>
+<script src="app.js"></script>
 
-<div ng-app="">
-
-    <p>Name: <input type="text" ng-model="name"></p>
-    <p>Hello, {{ name }}</p>
-
+<body ng-app="WeatherApp" ng-controller="WeatherController">
+<div class="container">
+    <div class="jumbotron mt-3">
+        <h1>Bottom Navbar example</h1>
+        <hr>
+    </div>
 </div>
+<nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+    <ul class="navbar-nav">
+        <li class="nav-item dropup">
+            <a class="navbar-brand nav-link" href="#" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img height="50" width="50" src="assets/Programs.png">
+            </a>
+            <div class="dropdown-menu " aria-labelledby="dropdown10">
+                <a class="dropdown-item">Quick Access</a>
+                <a class="divider" role="separator"></a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </li>
+    </ul>
 
+</nav>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 </html>

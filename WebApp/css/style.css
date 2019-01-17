@@ -1,0 +1,16 @@
+.navbar {
+    padding: 0;
+}
+
+.dropdown-menu {
+    height: 400px;
+    width: 300px;
+}
+
+.dropdown-item {
+    height: 20%;
+}
+
+.body {
+
+}

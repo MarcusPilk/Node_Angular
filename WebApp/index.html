@@ -10,10 +10,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src="app.js"></script>
 
+
 <body ng-app="WeatherApp" ng-controller="WeatherController">
 <div class="container">
     <div class="jumbotron mt-3">
-        <h1>Bottom Navbar example</h1>
+        <h1>{{demo}}</h1>
         <hr>
     </div>
 </div>
@@ -25,9 +26,8 @@
             </a>
             <div class="dropdown-menu " aria-labelledby="dropdown10">
                 <a class="dropdown-item">Quick Access</a>
-                <a class="divider" role="separator"></a>
                 <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#" ng-click="closeB()">Close Tab </a>
             </div>
         </li>
     </ul>

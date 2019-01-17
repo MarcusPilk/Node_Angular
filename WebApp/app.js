@@ -23,6 +23,15 @@ app.controller("WeatherController",['$scope','$http', '$sce',function ($scope, $
             minTemp: data.main.temp_min - KELVIN,
             maxTemp: data.main.temp_max - KELVIN
         };
-
     });
+
+    $scope.closeB = function(){
+        window.close();
+        $http.get('http://localhost:3001/close').then((resp) => {console.log('done')});
+    }
+
+
+
+
+
 }]);

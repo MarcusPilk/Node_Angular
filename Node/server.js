@@ -9,12 +9,18 @@ const weatherAPIUrl = `https://samples.openweathermap.org/data/2.5/weather?q=Lon
 app.use(cors());
 app.get('/', async (req,res) => {
 
-await axios.get(weatherAPIUrl)
-    .then(response => {
-        console.log(response.data);
-        res.send(response.data)
-    });
+// await axios.get(weatherAPIUrl)
+//     .then(response => {
+//         console.log(response.data);
+//         res.send(response.data)
+//     });
+//
+});
 
+
+app.get('/close', (req,res) => {
+    console.log("trying to close browser");
+    res.send();
 });
 
 app.listen(3001);

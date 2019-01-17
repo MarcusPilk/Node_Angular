@@ -2,6 +2,7 @@ let express = require('express');
 let app = new express();
 let axios = require('axios');
 let shell = require('shelljs');
+const {spawn} = require('child_process')
 let cors = require('cors');
 let path = require('path');
 const API_KEY = '511de09aed6883d2488a6a5ec9fde6a7';
@@ -24,7 +25,7 @@ app.get('/close', (req,res) => {
     res.send();
 });
 app.get('/clock', (req,res) => {
-    shell.exec('./clock.sh');
+    const deploySh = spawn('./clock.sh');
    res.send();
 });
 
